@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Album } from '../Models/Album';
 import { albums } from '../Mocks/albums';
+import { Song } from '../Models/Song';
 
 
 @Injectable({
@@ -30,7 +31,10 @@ export class AlbumService {
     this.albums[id].score=rating;
   }
 
-
+  addSong(id:number,songid:number){
+    this.albums[id].songs[songid].bought=true;
+    
+  }
   
   addAlbum(album:Album){
     //album.bought=true;

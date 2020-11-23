@@ -65,7 +65,7 @@
     <ng-container matColumnDef="price">
       <th mat-header-cell *matHeaderCellDef>Price</th>
       <td mat-cell *matCellDef="let element">
-        <button mat-stroked-button  >{{ element.price }}</button>
+        <button mat-stroked-button [disabled]="element.bought" (click)="addSong(selectedAlbum.id,element.sid)" >{{element.price }}</button>
       </td>
     </ng-container>
 
