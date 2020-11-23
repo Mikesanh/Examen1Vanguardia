@@ -1,5 +1,5 @@
-<mat-toolbar>
-  <button mat-button routerLink="/home">Home</button>
+<mat-toolbar class="grad">
+  <button mat-button class="marge2"routerLink="/home">Home</button>
   <button mat-button class="marge" routerLink="/profile">Profile</button>
 </mat-toolbar>
 
@@ -30,11 +30,8 @@
   <mat-card class="rightcard2 .mat-elevation-z0" >
     <mat-card-header>
     <mat-card-title class="custom">
-      Release date: {{ selectedAlbum.date.getDay() }}/{{
-        selectedAlbum.date.getMonth()
-      }}/{{ selectedAlbum.date.getFullYear() }}
-     
-      Genre: {{ selectedAlbum.genre }}
+      Release date: {{ selectedAlbum.date.toLocaleDateString() }}
+      &nbsp;Genre: {{ selectedAlbum.genre }}
       
     </mat-card-title>
     </mat-card-header>
@@ -65,7 +62,7 @@
     <ng-container matColumnDef="price">
       <th mat-header-cell *matHeaderCellDef>Price</th>
       <td mat-cell *matCellDef="let element">
-        <button mat-stroked-button [disabled]="element.bought" (click)="addSong(selectedAlbum.id,element.sid)" >{{element.price }}</button>
+        <button mat-stroked-button [disabled]="element.bought" (click)="addSong(selectedAlbum.id,element.sid)" >${{element.price }}</button>
       </td>
     </ng-container>
 

@@ -18,7 +18,7 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit(): void {
     this.boughtAlbums=this.albumService.getBoughtAlbums();
-    console.log(this.boughtAlbums);
+
 
 
   }

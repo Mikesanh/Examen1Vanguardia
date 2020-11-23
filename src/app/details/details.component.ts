@@ -27,6 +27,7 @@ export class DetailsComponent implements OnInit {
   ngOnInit(): void {
     let id = +this.route.snapshot.paramMap.get('id');
     this.selectedAlbum=this.albumService.getAlbumById(id)
+  
     
   }
 

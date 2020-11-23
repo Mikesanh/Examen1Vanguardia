@@ -7,7 +7,7 @@ export class Album{
     albumName:string;
     artistName:string;
     price:number;
-    genre: 'Rock'|'Jazz'|'Indie'|'Pop';
+    genre: string;
     score:number;
     date:Date;
     description:string;
