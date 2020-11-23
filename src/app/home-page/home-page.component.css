@@ -1,0 +1,66 @@
+.content {
+    padding: 16px;
+  }
+
+  .marge{
+    margin-top: 3px;
+    margin-left: 1430px;
+
+  }
+  .custom.mat-toolbar {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    background-color: #282a36;
+    color: #ff79c6;
+    font-size: 29px;
+    justify-content: left;
+  }
+  
+  .custom.mat-card-title {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+  }
+  
+  .custom{
+    margin-right: 60px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .custom.mat-stroked-button{
+    border-color: black;
+    border-width: thin;
+    color: black;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-right: 60px;
+    font-size: 14px;
+    width : 11.5em;
+    
+  }
+  .custom.mat-stroked-button:disabled{
+    color: 	#C8C8C8;
+    border-color: 	#C8C8C8;
+  
+  }
+  .custom.mat-card {
+    background-color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100px;
+  }
+  
+  .custom.span {
+    background-color: #f8f8f2;
+  }
+
+  p { text-align: right; }
+  
+ 
+  
+  .card:hover{
+    box-shadow:0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.20);
+  }
