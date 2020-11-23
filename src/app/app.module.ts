@@ -16,6 +16,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { ProfileComponent } from './profile/profile.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatToolbarModule } from "@angular/material/toolbar";
+import { SimpleNotificationsModule } from 'angular2-notifications';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,9 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     ProfileComponent
   ],
   imports: [
+    BrowserAnimationsModule,
+    BrowserModule,
+    SimpleNotificationsModule.forRoot(),
     MatToolbarModule,
     FormsModule,
     ReactiveFormsModule,

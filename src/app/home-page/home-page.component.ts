@@ -3,6 +3,8 @@ import { Album } from '../Models/Album';
 import { albums } from '../Mocks/albums';
 import { ActivatedRoute } from '@angular/router';
 import { AlbumService } from '../Core/AlbumService';
+import { NotificationsService } from 'angular2-notifications';
+import { title } from 'process';
 
 @Component({
   selector: 'app-home-page',
@@ -11,10 +13,11 @@ import { AlbumService } from '../Core/AlbumService';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor( private Router:ActivatedRoute, private albumService: AlbumService) {
+  constructor(private _service: NotificationsService , private Router:ActivatedRoute, private albumService: AlbumService) {
     
 
    }
+  popup=false;
   defaultElevation = 2;
   raisedElevation = 8;
   albums:Array<Album>;
@@ -32,7 +35,14 @@ export class HomePageComponent implements OnInit {
   addAlbum(album:Album){
     album.bought=true;
     this.albumService.addAlbum(album);
-
+    this.popup=true;
+    this._service.success(album.albumName,"Comprado",{
+      position: ['bottom','right'],
+      timeOut:1100,
+      animate: 'fromRight',
+      showProgressBar: true
+    });
+   
   }
 
 }

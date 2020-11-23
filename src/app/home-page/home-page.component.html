@@ -18,12 +18,13 @@
       <img mat-card-image src="{{ album.image }}"routerLink="/detail/{{ album.id }}" />
       <mat-card-content>
         <div class="custom">
-          <button mat-stroked-button class="custom" [disabled]="album.bought" (click)="addAlbum(album) "color="primary">
+          <button mat-stroked-button ng-click="showAlert($event)" class="custom" [disabled]="album.bought" (click)="addAlbum(album) "color="primary">
             ${{ album.price.toFixed(2) }} Buy
           </button>
+         
         </div>
       </mat-card-content>
     </mat-card>
   </div>
 </div>
-
+<simple-notifications ></simple-notifications>

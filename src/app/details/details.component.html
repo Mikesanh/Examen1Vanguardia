@@ -62,7 +62,7 @@
     <ng-container matColumnDef="price">
       <th mat-header-cell *matHeaderCellDef>Price</th>
       <td mat-cell *matCellDef="let element">
-        <button mat-stroked-button [disabled]="element.bought" (click)="addSong(selectedAlbum.id,element.sid)" >${{element.price }}</button>
+        <button mat-stroked-button [disabled]="element.bought" (click)="addSong(selectedAlbum.id,element.sid,element.songName)">${{element.price }}</button>
       </td>
     </ng-container>
 
@@ -70,3 +70,4 @@
     <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
   </table>
 </mat-card>
+<simple-notifications></simple-notifications>
