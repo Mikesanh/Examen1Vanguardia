@@ -20,7 +20,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"El Temblor",
             artistName:"Bandalos Chinos",
-            duration:"3:43",
+            duration:100,
             popularity:5,
             price:1.99
 
@@ -30,7 +30,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"Vamonos de viaje",
             artistName:"Bandalos Chinos",
-            duration:"3:56",
+            duration:110,
             popularity:5,
             price:1.99
 
@@ -40,7 +40,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"Super V",
             artistName:"Bandalos Chinos",
-            duration:"2:53",
+            duration:180,
             popularity:5,
             price:1.99
 
@@ -50,7 +50,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"Demasiado",
             artistName:"Bandalos Chinos",
-            duration:"3:46",
+            duration:80,
             popularity:5,
             price:1.99
 
@@ -60,7 +60,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"El Club de la montaña",
             artistName:"Bandalos Chinos",
-            duration:"3:54",
+            duration:180,
             popularity:5,
             price:1.99
 
@@ -88,7 +88,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"Paranoia Pop",
             artistName:"Bandalos Chinos",
-            duration:"3:52",
+            duration:100,
             popularity:5,
             price:1.99
 
@@ -98,7 +98,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"Sin Señal",
             artistName:"Bandalos Chinos",
-            duration:"3:59",
+            duration:110,
             popularity:5,
             price:1.99
 
@@ -108,7 +108,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"A La Cabeza",
             artistName:"Bandalos Chinos",
-            duration:"3:11",
+            duration:80,
             popularity:5,
             price:1.99
 
@@ -118,7 +118,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"Chu-CHu",
             artistName:"Bandalos Chinos",
-            duration:"3:13",
+            duration:120,
             popularity:5,
             price:1.99
 
@@ -128,7 +128,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"La Herida",
             artistName:"Bandalos Chinos",
-            duration:"4:07",
+            duration:130,
             popularity:5,
             price:1.99
 
@@ -156,7 +156,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"Circa 2015",
             artistName:"Jaden",
-            duration:"3:52",
+            duration:180,
             popularity:5,
             price:1.99
 
@@ -166,7 +166,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"Rainbow Bap",
             artistName:"Jaden",
-            duration:"3:59",
+            duration:110,
             popularity:5,
             price:1.99
 
@@ -176,7 +176,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"LUCY!",
             artistName:"Jaden",
-            duration:"3:11",
+            duration:130,
             popularity:5,
             price:1.99
 
@@ -186,7 +186,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"Everything",
             artistName:"Jaden",
-            duration:"3:13",
+            duration:120,
             popularity:5,
             price:1.99
 
@@ -196,7 +196,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"In The Hills",
             artistName:"Jaden",
-            duration:"4:07",
+            duration:120,
             popularity:5,
             price:1.99
 
@@ -224,7 +224,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"Igor's Theme",
             artistName:"Tyler, The Creator",
-            duration:"3:52",
+            duration:180,
             popularity:5,
             price:1.99
 
@@ -234,7 +234,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"EARFQUAKE",
             artistName:"Tyler, The Creator",
-            duration:"3:59",
+            duration:120,
             popularity:5,
             price:1.99
 
@@ -244,7 +244,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"I THINK",
             artistName:"Tyler, The Creator",
-            duration:"3:11",
+            duration:110,
             popularity:5,
             price:1.99
 
@@ -254,7 +254,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"RUNNING OUT OF TIME",
             artistName:"Tyler, The Creator",
-            duration:"3:13",
+            duration:110,
             popularity:5,
             price:1.99
 
@@ -264,7 +264,7 @@ export const albums: Array<Album> =
             bought:false,
             songName:"NEW MAGIC WAND",
             artistName:"Tyler, The Creator",
-            duration:"4:07",
+            duration:80,
             popularity:5,
             price:1.99
 
