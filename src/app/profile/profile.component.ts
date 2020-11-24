@@ -15,12 +15,17 @@ export class ProfileComponent implements OnInit {
   
   boughtAlbums:Array<Album>;
   songs:Array<Song>
+  
 
   ngOnInit(): void {
     this.boughtAlbums=this.albumService.getBoughtAlbums();
 
-
-
+  }
+  getDuration(album:Album):number {
+    let cont=0;
+    album.songs.forEach(song => { cont += song.duration });
+    console.log(cont);
+    return cont/60;
   }
 
 

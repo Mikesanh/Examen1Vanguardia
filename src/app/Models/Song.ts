@@ -5,7 +5,7 @@ export class Song{
     bought:boolean
     songName:string;
     artistName:string;
-    duration:string;
+    duration:number;
     popularity:number;
     price:number;
 }

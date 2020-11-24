@@ -6,16 +6,15 @@
       fxFlex="15%"
       fxFlex.xs="100%"
       fxFlex.sm="33%"
-      *ngFor="let album of boughtAlbums"
+      *ngFor="let album of boughtAlbums" 
     >
       <mat-card  class="card mat-elevation-z3">
         <mat-card-header>
-          <mat-card-title> {{ album.albumName }} </mat-card-title>
           <mat-card-subtitle>{{ album.artistName }}</mat-card-subtitle>
         </mat-card-header>
         <img mat-card-image src="{{ album.image }}"routerLink="/detail/{{ album.id }}" />
         <mat-card-content>
-            Duration: 
+            Duration: {{getDuration(album).toFixed(2)}} min
         </mat-card-content>
       </mat-card>
     </div>
